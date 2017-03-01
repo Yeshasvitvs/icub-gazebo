@@ -1336,5 +1336,9 @@
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_hand_mais.ini</yarpConfigurationFile>
     </plugin>
 
+    <plugin name="object_attach" filename="libgazebo_yarp_objectattacher.so">
+      <yarpConfigurationFile>model://icub/conf/gazebo_objectattacher.ini</yarpConfigurationFile>
+    </plugin>
+
   </model>
 </sdf>
