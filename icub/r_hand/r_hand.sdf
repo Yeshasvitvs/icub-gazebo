@@ -412,6 +412,28 @@
             </collision>
         </link>
 
+        <link name='r_hand_dh_frame'>
+            <pose frame=''>0.025 -0.04 0 0 0 0</pose>
+            <inertial>
+                <mass>0.010</mass>
+                <inertia>
+                    <ixx>0.0000112</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>0.0000112</iyy>
+                    <iyz>0</iyz>
+                    <izz>0.0000112</izz>
+                </inertia>
+            </inertial>
+        </link>
+        <joint name='r_hand_dh_frame_fixed_joint' type='fixed'>
+            <child>r_hand_dh_frame</child>
+            <parent>r_hand_base_link</parent>
+            <axis>
+                <xyz>0 0 0</xyz>
+            </axis>
+        </joint>
+
         <link name='r_ai_dummy'>
             <pose frame=''>0.01225 -0.0643 0.027 -1.4749 0.017507 -1.57079</pose>
             <inertial>
