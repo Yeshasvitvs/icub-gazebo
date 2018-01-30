@@ -1627,7 +1627,7 @@
   <!--     <visual name='eyes_tilt_visual'>
         <pose>0.0 0.0 0.0 0 0 0</pose>
         <geometry>
-          <cylinder><radius>0.01</radius><length>0.05</length></cylinder> 
+          <cylinder><radius>0.01</radius><length>0.05</length></cylinder>
         </geometry>
       </visual> -->
     </link>
@@ -1647,12 +1647,12 @@
         </inertia>
       </inertial>
        <visual name='left_eye_visual'>
-         <pose>0.055 0.033 -0.14 0 0 0</pose> 
+         <pose>0.055 0.033 -0.14 0 0 0</pose>
         <geometry>
              <mesh>
             <scale>1 1 1</scale>
             <uri>model://icub/meshes/visual/icub_eye.dae</uri>
-          </mesh> 
+          </mesh>
    <!-- <cylinder><radius>0.01</radius><length>0.05</length></cylinder> -->
         </geometry>
       </visual>
@@ -1673,13 +1673,13 @@
         </inertia>
       </inertial>
       <visual name='right_eye_visual'>
-        <pose>0.055 0.033 -0.14 0 0 0</pose> 
+        <pose>0.055 0.033 -0.14 0 0 0</pose>
         <geometry>
  <!-- <cylinder><radius>0.01</radius><length>0.05</length></cylinder>-->
             <mesh>
             <scale>1 1 1</scale>
             <uri>model://icub/meshes/visual/icub_eye.dae</uri>
-          </mesh> 
+          </mesh>
         </geometry>
       </visual>
     </link>
@@ -2175,6 +2175,9 @@
     </plugin>
     <plugin name="apply_external_wrench" filename="libgazebo_yarp_externalwrench.so" >
       <robotNamefromConfigFile>model://icub/conf/gazebo_icub_robotname.ini</robotNamefromConfigFile>>
+    </plugin>
+    <plugin name="object_attach" filename="libgazebo_yarp_objectattacher.so">
+      <yarpConfigurationFile>model://icub/conf/gazebo_objectattacher.ini</yarpConfigurationFile>
     </plugin>
     <pose>0 0 0.70 0 0 0</pose>
   </model>

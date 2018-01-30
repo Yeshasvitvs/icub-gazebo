@@ -1322,7 +1322,7 @@
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_left_arm.ini</yarpConfigurationFile>
       <initialConfiguration>-0.52 0.52 0 0.785 0 0 0.0</initialConfiguration>
     </plugin>
-    
+
     <plugin name='controlboard_right_arm' filename='libgazebo_yarp_controlboard.so'>
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_arm.ini</yarpConfigurationFile>
       <initialConfiguration>-0.52 0.52 0 0.785 0 0 0.0</initialConfiguration>
@@ -1336,9 +1336,13 @@
       <yarpConfigurationFile>model://icub/conf/gazebo_icub_right_hand_mais.ini</yarpConfigurationFile>
     </plugin>
 
-    <plugin name="object_attach" filename="libgazebo_yarp_objectattacher.so">
+    <!--plugin name="object_attach" filename="libgazebo_yarp_objectattacher.so">
       <yarpConfigurationFile>model://icub/conf/gazebo_objectattacher.ini</yarpConfigurationFile>
-    </plugin>
+    </plugin-->
+
+    <!--plugin name="world_interface" filename="libgazebo_yarp_worldinterface.so">
+      <yarpConfigurationFile>model://icub/conf/gazebo_worldinterface.ini</yarpConfigurationFile>
+    </plugin-->
 
   </model>
 </sdf>
